@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.zes.dailyassistant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.zes.dailyassistant.base.GeneralTitleBar 
+        android:id="@+id/account_generalTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftVisibility="invisible"
+        app:rightText="@string/account_fragment_right"
+        app:title="@string/account_fragment_title">
+        
+    </com.zes.dailyassistant.base.GeneralTitleBar>
+    
+    <ListView 
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/account_generalTitleBar">
+        
+    </ListView>
+    
+    <TextView 
+        android:id="@id/android:empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/account_fragment_empty"/>
+
+</RelativeLayout>

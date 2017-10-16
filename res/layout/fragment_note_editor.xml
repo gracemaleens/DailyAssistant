@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.zes.dailyassistant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.zes.dailyassistant.base.GeneralTitleBar 
+        android:id="@+id/note_editor_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/note_editor_fragment_titleBar_title"
+        app:rightText="@string/note_editor_fragment_titleBar_rightText"
+        app:rightVisibility="invisible">
+        
+    </com.zes.dailyassistant.base.GeneralTitleBar>
+    
+    <EditText 
+        android:id="@+id/note_editor_editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top|left"
+        android:padding="10dp"
+        android:hint="@string/note_editor_fragment_editText_Hint"
+        android:background="#00000000"/>
+
+</LinearLayout>

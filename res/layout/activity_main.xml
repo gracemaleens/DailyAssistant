@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.zes.dailyassistant.base.DailyassistantViewPager
+        android:id="@+id/main_activity_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/main_activity_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/main_activity_bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/main_activity_bottomMenu_item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/selector_button_delete"
+            android:enabled="false"
+            android:text="@string/bottomMenu_item_delete" />
+    </RelativeLayout>
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/main_activity_tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- android:background="#BFBFBF"/> -->
+
+</LinearLayout>

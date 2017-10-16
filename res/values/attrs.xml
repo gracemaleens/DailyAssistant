@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="GeneralTitleBar">
+        
+        <attr name="background" format="reference|color" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textSize" format="reference|dimension" />
+        
+        <attr name="title_visibility" >
+            <enum name="invisible" value="0"/>
+            <enum name="visible" value="1" />
+        </attr>
+        <attr name="titleColor" format="reference|color" />
+        <attr name="titleSize" format="reference|dimension" />
+        <attr name="title" format="reference|string" />
+        
+        <attr name="leftVisibility" >
+            <enum name="invisible" value="0"/>
+            <enum name="visible" value="1" />
+        </attr>
+        <attr name="leftTextColor" format="reference|color" />
+        <attr name="leftTextSize" format="reference|dimension" />
+        <attr name="leftText" format="reference|string" />
+        <attr name="leftDrawableLeft" format="reference" />
+        
+        <attr name="rightVisibility" >
+            <enum name="invisible" value="0"/>
+            <enum name="visible" value="1" />
+        </attr>
+        <attr name="rightTextColor" format="reference|color" />
+        <attr name="rightTextSize" format="reference|dimension" />
+        <attr name="rightText" format="reference|string" />
+        <attr name="rightImage" format="reference" />
+        
+        <attr name="bottomLineColor" format="reference|color" />
+        
+    </declare-styleable>
+
+</resources>

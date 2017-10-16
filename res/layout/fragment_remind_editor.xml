@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.zes.dailyassistant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.zes.dailyassistant.base.GeneralTitleBar
+            android:id="@+id/remind_editor_generalTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:background="@android:color/background_light"
+            app:leftText="@string/remind_editor_fragment_left"
+            app:rightText="@string/remind_editor_fragment_right"
+            app:title="@string/remind_editor_fragment_title" >
+            
+        </com.zes.dailyassistant.base.GeneralTitleBar>
+
+        <EditText
+            android:id="@+id/remind_editor_title_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="@string/remind_editor_fragment_title_editText_hint"
+            android:padding="10dp" 
+            android:background="@android:color/background_light"/>
+
+        <EditText
+            android:id="@+id/remind_editor_site_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="@string/remind_editor_fragment_site_editText_hint"
+            android:padding="10dp" 
+            android:background="@android:color/background_light"/>
+
+        <RelativeLayout
+            android:id="@+id/remind_editor_fragment_dateTimeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:id="@+id/remind_editor_fragment_dateTimeLabel_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/remind_editor_fragment_dateTimeLabel"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/remind_editor_fragment_dateTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/remind_editor_fragment_dateTimeContent"
+                android:gravity="end" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remind_editor_fragment_remindLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" 
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:id="@+id/remind_editor_fragment_remindLabel_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="1"
+                android:text="@string/remind_editor_fragment_remindLabel"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/remind_editor_fragment_remindContent_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#00000000"
+                android:drawableRight="@drawable/selector_button_more"
+                android:text="@string/remind_editor_fragment_remindContent"
+                 android:gravity="end" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remind_editor_fragment_repetitionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:id="@+id/remind_editor_fragment_repetitionLabel_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/remind_editor_fragment_repetitionLabel"
+                android:textSize="18sp" />
+            
+            <Button
+                android:id="@+id/remind_editor_fragment_repetitionContent_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#00000000"
+                android:drawableRight="@drawable/selector_button_more"
+                android:text="@string/remind_editor_fragment_repetitionContent"
+                android:gravity="end" />
+            
+        </RelativeLayout>
+        
+        <LinearLayout 
+            android:id="@+id/remind_editor_fragment_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            
+            <EditText 
+	            android:id="@+id/remind_editor_fragment_notes_editText"
+	            android:layout_width="match_parent"
+	            android:layout_height="100dp"
+	            android:hint="@string/remind_editor_fragment_remarks"
+	            android:gravity="start"
+	            android:padding="10dp" 
+	            android:layout_marginBottom="10dp"
+	            android:background="@android:color/background_light"/>
+            
+            <RelativeLayout 
+                android:id="@+id/remind_editor_fragment_delete_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:background="@android:color/background_light">
+                
+                <Button 
+	                android:id="@+id/remind_editor_fragment_delete_button"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingTop="10dp"
+	                android:paddingBottom="10dp"
+	                android:paddingLeft="100dp"
+	                android:paddingRight="100dp"
+	                android:layout_centerInParent="true"
+	                android:text="@string/remind_editor_fragment_delete"
+	                android:textSize="18sp"
+	                android:drawableLeft="@drawable/selector_button_delete"
+	                android:background="#00000000"/>
+                
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

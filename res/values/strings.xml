@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">日常助手</string>
+    
+    <string name="text_open_main_activity">打开主界面</string>
+    <string name="text_open_float_window">打开悬浮窗</string>
+    <string name="text_close_float_window">关闭悬浮窗</string>
+    <string name="text_note_fragment_option_menu_add">添加</string>
+    <string name="note_fragment_edit">编辑</string>
+    <string name="note_fragment_cancel">取消</string>
+    <string name="note_fragment_selectAll">全选</string>
+    <string name="note_fragment_select">选择</string>
+    <string name="note_fragment_note">便签</string>
+    <string name="bottomMenu_item_delete">删除</string>
+    <string name="note_editor_fragment_titleBar_title">编辑便签</string>
+    <string name="note_editor_fragment_titleBar_rightText">完成</string>
+    <string name="note_editor_fragment_editText_Hint">写点什么..</string>
+    <string name="action_mode_delete_title">删除</string>
+    <string name="remind_fragment_title">日程提醒</string>
+    <string name="remind_fragment_empty">当前无日程提醒..</string>
+    <string name="cloud_space_fragment_right">上传</string>
+    <string name="cloud_space_fragment_title">云空间</string>
+    <string name="cloud_space_fragment_empty">未实现..</string>
+    <string name="account_fragment_right">设置</string>
+    <string name="account_fragment_title">我</string>
+    <string name="account_fragment_empty">未实现..</string>
+    <string name="remind_editor_fragment_left">取消</string>
+    <string name="remind_editor_fragment_title">编辑</string>
+    <string name="remind_editor_fragment_right">创建</string>
+    <string name="remind_editor_fragment_title_editText_hint">标题</string>
+    <string name="remind_editor_fragment_site_editText_hint">地点</string>
+    <string name="remind_editor_fragment_dateTimeLabel">时间</string>
+    <string name="remind_editor_fragment_dateTimeContent">2017-08-10 周四 03:50:00</string>
+    <string name="remind_editor_fragment_remindLabel">提醒</string>
+    <string name="remind_editor_fragment_remindContent">10分钟前</string>
+    <string name="remind_editor_fragment_repetitionLabel">重复</string>
+    <string name="remind_editor_fragment_repetitionContent">永不</string>
+    <string name="remind_editor_fragment_remarks">备注</string>
+    <string name="remind_editor_fragment_delete">删除</string>
+
+</resources>

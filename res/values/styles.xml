@@ -1,0 +1,28 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- <style name="MaterialPanel" parent="@android:style/Theme.Material.Panel"></style> -->
+    <style name="HoloDialogNoActionBarTheme" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar"></style>
+    <style name="NoActionBarTheme" parent="@android:style/Theme.Holo.NoActionBar"></style>
+    
+    <style name="ListViewCheckTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_list_view_item_check</item>
+    </style>
+
+</resources>
